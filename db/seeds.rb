@@ -15,7 +15,7 @@ end
         title: Faker::Book.title,
         author: Faker::Book.author,
         description: Faker::Book.genre,
-        pages: Faker::Number.within(range: 1..500),
+        pages: Faker::Number.within(range: 100..300),
         user_id: Faker::Number.within(range: 1..10)
     )
 end
@@ -23,7 +23,7 @@ end
 
 5.times do
     seeded_reviews = Review.create(
-        comment:Faker::Verb.past_participle
+        comments:Faker::Verb.past_participle
     )
 end
 
