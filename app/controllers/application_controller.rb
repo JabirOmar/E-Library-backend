@@ -1,3 +1,5 @@
+set :bind, '0.0.0.0' 
+
 class ApplicationController < Sinatra::Base
 
     get "/" do
