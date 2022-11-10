@@ -13,7 +13,7 @@ class ApplicationController < Sinatra::Base
         get_users.to_json
     end
 
-    get '/users/id' do 
+    get '/users/:id' do 
         get_users_by_id = User.find(params[:id])
         get_users_by_id.to_json
     end
